@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    int i, j, num ;
+    for(i = 1; i <= 5; i++)
+    {
+        num = i;
+        for(j = 5; j >= 1; j--)
+        {
+            if(num <= 5)
+            {
+                printf("%d", num);
+            }
+            else
+            {
+                printf("%d",j);
+            }
+            num++;
+        }
+        printf("\n");
+    }
+    return 0;
+}
