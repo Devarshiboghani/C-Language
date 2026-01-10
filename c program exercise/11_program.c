@@ -10,5 +10,6 @@ int main()
     minute = second/60;
 
     printf("%d second = %d minute", second, minute);
+    
     return 0;
 }
