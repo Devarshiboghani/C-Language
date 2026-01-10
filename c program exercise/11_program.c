@@ -2,13 +2,13 @@
 
 int main()
 {
-    int second = 0,minute = 0;
+    int second, minute;
 
     printf("Enter second = ");
     scanf("%d", &second);
 
     minute = second/60;
 
-    printf("%d second = %d minute", second, minute );
+    printf("%d second = %d minute", second, minute);
     return 0;
 }
