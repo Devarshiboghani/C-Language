@@ -8,5 +8,6 @@ int main()
     scanf("%d", &value);
 
     printf("value is %d\n", value);
+    
     return 0;
 }
