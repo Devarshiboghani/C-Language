@@ -16,7 +16,7 @@ int main()
    float sum = value1 + value2 + value3;
    float average = sum/3;
 
-    printf("%.0f sum = %.2f average\n",sum, average);
+    printf("%.2f sum = %.2f average\n",sum, average);
 
     return 0;
 }

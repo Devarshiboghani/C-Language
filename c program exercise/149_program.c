@@ -2,14 +2,17 @@
 
 int main()
 {
-    float km = 0, ltr = 0;
+    float distance = 0, petrol = 0, average = 0;
 
-    printf("Enter number of km = ");
-    scanf("%f", &km);
+    printf("Enter total distance (in KM): ");
+    scanf("%f", &distance);
 
-    ltr = km*1000;
-    
-    printf("%.0f km = %.2f ltr", km, ltr);
+    printf("Enter petrol used (in litres): ");
+    scanf("%f", &petrol);
+
+    average = distance / petrol;
+
+    printf("Average = %.2f km/litre\n", average);
 
     return 0;
 }
