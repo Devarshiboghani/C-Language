@@ -2,18 +2,19 @@
 
 int main()
 {
-    int val = 0;
+    int val;
+
     printf("Enter number of value is = ");
     scanf("%d", &val);
 
     if(val >= 100 && val <= 999)
     {
-        printf("%d is three digit", val);
+        printf("%d is a three digit number.\n", val);
     }
 
     else
     {
-        printf("%d is not three digit", val);
+        printf("%d is a not three digit number.\n", val);
     }
 
     return 0;
