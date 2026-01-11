@@ -2,43 +2,44 @@
 
 int main()
 {
-    int val = 0;
-    printf("Enter week number : ");
-    scanf("%d", &val);
+    int weekNumber;
 
-    if(val==1)
+    printf("Enter week number (1-7): ");
+    scanf("%d", &weekNumber);
+
+    if(weekNumber==1)
     {
-        printf("%d is monday", val);
+        printf("%d is monday", weekNumber);
     }
 
-    else if(val==2)
+    else if(weekNumber==2)
     {
-        printf("%d is tuesday", val);
+        printf("%d is tuesday", weekNumber);
     }
-    else if(val==3)
+    else if(weekNumber==3)
     {
-        printf("%d is wednesday", val);
+        printf("%d is wednesday", weekNumber);
     }
-    else if(val==4)
+    else if(weekNumber==4)
     {
-        printf("%d is thursday", val);
+        printf("%d is thursday", weekNumber);
     }
-    else if(val==5)
+    else if(weekNumber==5)
     {
-        printf("%d is friday", val);
+        printf("%d is friday", weekNumber);
     }
-    else if(val==6)
+    else if(weekNumber==6)
     {
-        printf("%d is saturday", val);
+        printf("%d is saturday", weekNumber);
     }
-    else if(val==7)
+    else if(weekNumber==7)
     {
-        printf("%d is sunday", val);
+        printf("%d is sunday", weekNumber);
     }
 
     else
     {
-        printf("%d is not weekday", val);
+        printf("%d is not weekday", weekNumber);
     }
 
     return 0;

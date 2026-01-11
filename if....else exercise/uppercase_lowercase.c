@@ -2,23 +2,24 @@
 
 int main()
 {
-    int ch = 0;
-    printf("Enter alphabet : ");
+    char ch;
+
+    printf("Enter a character: ");
     scanf("%c", &ch);
 
     if(ch>='A' && ch<='Z')
     {
-        printf("%c is uppercase");
+        printf("%c is an uppercase alphabet.\n", ch);
     }
 
     else if(ch>='a' && ch<='z')
     {
-        printf("%c is lowercase");
+        printf("%c is a lowercase alphabet.\n", ch);
     }
 
     else
     {
-        printf("%c is invalidcase");
+          printf("%c is not an alphabet.\n", ch);
     }
     
     return 0;

@@ -2,26 +2,24 @@
 
 int main()
 {
-    int sp = 0, bp = 0;
-    printf("Enter number of value 1 = ");
-    scanf("%d", &sp);
+     float costPrice, sellingPrice, amount;
 
-    printf("Enter number of value 2= ");
-    scanf("%d", &bp);
+    printf("Enter Cost Price (CP): ");
+    scanf("%f", &costPrice);
 
-    if(sp > bp)
-    {
-        printf("%d profit");
+    printf("Enter Selling Price (SP): ");
+    scanf("%f", &sellingPrice);
+
+    if(sellingPrice > costPrice) {
+        amount = sellingPrice - costPrice;
+        printf("Profit = %.2f\n", amount);
     }
-
-    else if(sp < bp)
-    {
-        printf("%d loss");
+    else if(costPrice > sellingPrice) {
+        amount = costPrice - sellingPrice;
+        printf("Loss = %.2f\n", amount);
     }
-
-    else
-    {
-        printf("%d is no profit no loss");
+    else {
+        printf("No Profit No Loss.\n");
     }
 
     return 0;
