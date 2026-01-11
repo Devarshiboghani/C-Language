@@ -2,7 +2,8 @@
 
 int main()
 {
-    int val1 = 0, val2 = 0;
+    int val1, val2;
+
     printf("Enter value 1 : ");
     scanf("%d", &val1);
 
@@ -14,9 +15,14 @@ int main()
         printf("maximum value 1 is = %d", val1);
     }
 
+     else if (val2 > val1)
+     {
+        printf("Maximum number is %d", val2);
+     }
+
     else 
     {
-        printf("maximum value 2 is = %d", val2);
+        printf("Both numbers are equal");
     }
 
     return 0; 

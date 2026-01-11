@@ -2,18 +2,19 @@
 
 int main()
 {
-    int val = 7;
+    int val;
+
     printf("Enter number of value = ");
     scanf("%d", &val);
 
     if(val % 2 == 0)
     {
-        printf("%d is a even number");
+        printf("Number is Even");
     }
 
     else
     {
-        printf("%d is a odd number");
+        printf("Number is Odd");
     }
     
     return 0;

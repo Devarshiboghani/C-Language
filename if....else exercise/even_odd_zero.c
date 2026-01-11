@@ -2,23 +2,24 @@
 
 int main()
 {
-    int val = 5;
+    int val;
+
     printf("Enter number of value = ");
     scanf("%d", &val);
 
     if(val % 2 == 0)
     {
-        printf("%d is even number");
+        printf("Number is Even");
     }
 
     else if(val % 2 != 0)
     {
-        printf("%d is odd number");
+        printf("Number is Odd");
     }
 
     else
     {
-        printf("%d is zero");
+        printf("Number is Zero");
     }
 
     return 0;

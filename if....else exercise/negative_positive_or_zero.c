@@ -2,23 +2,24 @@
 
 int main()
 {
-    int val = 15;
+    int val;
+
     printf("Enter number of value = ");
     scanf("%d", &val);
 
     if(val > 0)
     {
-        printf("%d is a positive value");
+        printf("Number is Positive");
     }
 
     else if(val < 0)
     {
-        printf("%d is a negative value");
+        printf("Number is Negative");
     }
 
     else
     {
-        printf("%d is zero");
+        printf("Number is zero");
     }
 
     return 0;

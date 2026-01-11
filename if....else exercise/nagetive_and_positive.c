@@ -2,21 +2,17 @@
 
 int main()
 {
-    int val1 = -22, val2 = +22;
+    int value;
 
-    if(val1 < 0)
-    {
-        printf("negative value is = %d &", val1);
-    }
+    printf("Enter a number: ");
+    scanf("%d", &value);
 
-    if(val2 > 0)
-    {
-        printf(" positive value is = %d", val2);
-    }
-
+   if (value > 0)
+        printf("Number is Positive");
+    else if (value < 0)
+        printf("Number is Negative");
     else
-    {
-        printf("it is zero");
-    }
+        printf("Number is Zero");
+
     return 0;
 }
