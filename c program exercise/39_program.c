@@ -11,6 +11,6 @@ int main()
     mtr = cm/100;
     km = mtr/1000;
 
-    printf("%.0f inch = %.2f km", inch , km);
+    printf("%.0f inch = %.6f km", inch , km);
     return 0;
 }
