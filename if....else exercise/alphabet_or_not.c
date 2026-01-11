@@ -2,18 +2,20 @@
 
 int main()
 {
-    char ch = 'A';
+    char ch;
+
     printf("Enter number of character = ");
     scanf("%c", &ch);
 
-    if(ch >= 'A' && ch <='z')
+    if((ch >= 'A' && ch <='Z') || (ch >= 'a' && ch <= 'z'))
     {
-        printf("%c is entered");
+        printf("Character is an Alphabet");
     }
 
     else
     {
-        printf("%c is not entered");
+        printf("Character is NOT an Alphabet");
     }
+    
     return 0;
 }

@@ -2,18 +2,19 @@
 
 int main()
 {
-    char ch = 'i';
+    char ch;
+
     printf("Enter alphabet = ");
     scanf("%c", &ch);
 
-    if(ch=='i'||ch=='o'||ch=='a'||ch=='e'||ch=='u')
+    if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u' || ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U')
     {
-        printf("%c is vowel");
+        printf("It is a Vowel");
     }
 
     else
     {
-        printf("%c is consonant");
+        printf("It is a Consonant");
     }
     
     return 0;
