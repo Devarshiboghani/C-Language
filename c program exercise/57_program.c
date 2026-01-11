@@ -11,7 +11,7 @@ int main()
     day = yr*365;
     hr = day*24;
 
-    printf("%.0f mon = %.2f hr", mon, hr);
+    printf("%.0f mon = %.0f hr", mon, hr);
     
     return 0;
 }
