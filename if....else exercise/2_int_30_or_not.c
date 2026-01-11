@@ -2,7 +2,7 @@
 
 int main()
 {
-    int a = 0, b = 0;
+    int a, b;
 
     printf("Enter number of value 1 = ");
     scanf("%d", &a);
@@ -17,7 +17,7 @@ int main()
 
     else
     {
-        printf("%d",a+b);
+        printf("false");
     }
 
     return 0;
