@@ -8,7 +8,7 @@ int main()
     scanf("%f", &mtr);
 
     cm = mtr*100;
-    inch = cm*2.54;
+    inch = cm/2.54;
 
     printf("%.0f mtr = %.2f inch\n", mtr, inch);
     
