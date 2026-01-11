@@ -2,7 +2,7 @@
 
 int main()
 {
-    float feet=0, cm=0, mtr=0;
+    float feet, cm, mtr;
 
     printf("Enter number of feet = ");
     scanf("%f", &feet);
@@ -10,6 +10,6 @@ int main()
     cm = feet/30.48;
     mtr = cm/100;
 
-    printf("%f feet = %f mtr", feet, mtr);
+    printf("%f feet = %.2f mtr", feet, mtr);
     return 0;
 }

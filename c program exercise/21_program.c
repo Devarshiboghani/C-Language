@@ -2,13 +2,14 @@
 
 int main()
 {
-    float kelvin=0, fahrenheit=0;
+    float kelvin, fahrenheit;
 
     printf("Enter number of kelvin = ");
     scanf("%f", &kelvin);
 
-    fahrenheit = (kelvin - 273.15)*9/5 + 32;
+    fahrenheit = (kelvin - 273.15) * 9.0/5.0 + 32;
 
     printf("%.0f kelvin = %.2f fahrenheit", kelvin, fahrenheit);
+
     return 0;
 }
