@@ -9,7 +9,7 @@ int main()
 
     inch = cm/2.54;
 
-    printf("%.0f cm = %.2f inch", cm, inch);
+    printf("%.2f cm = %.2f inch", cm, inch);
     
     return 0;
 }
