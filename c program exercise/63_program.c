@@ -7,7 +7,7 @@ int main()
     printf("Enter number of cm = ");
     scanf("%f", &cm);
 
-    feet = cm*30.48;
+    feet = cm/30.48;
 
     printf("%.0f cm = %.2f feet", cm, feet);
     
