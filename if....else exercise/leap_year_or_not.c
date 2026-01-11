@@ -2,19 +2,21 @@
 
 int main()
 {
-    int val = 365;
-    printf("Enter number of = ");
-    scanf("%d", &val);
+    int year;
 
-    if(val == 365)
-    {
-        printf("%d is leap year");
-    }
+    printf("Enter a year = ");
+    scanf("%d", &year);
+
+     if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))
+     {
+        printf("Leap Year");
+     }
 
     else
     {
-        printf("%d is not leap year");
+        printf("Not a Leap Year");
     }
+
     
     return 0;
 }
