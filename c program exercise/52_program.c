@@ -2,15 +2,14 @@
 
 int main()
 {
-    float week = 0,yr = 0, day = 0;
+    float week = 0, day = 0;
 
     printf("Enter number of week = ");
     scanf("%f", &week);
 
-    yr = week/52;
-    day = yr*365;
-
-    printf("%.0f week = %.2f day", week, day);
+    day = week * 7;
+    
+    printf("%.f week = %.f day", week, day);
     
     return 0;
 }
