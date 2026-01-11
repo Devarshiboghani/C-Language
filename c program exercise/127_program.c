@@ -9,7 +9,7 @@ int main()
 
     mtr = km*1000;
     cm = mtr*100;
-    inch = cm*2.54;
+    inch = cm / 2.54;
 
     printf("%.0f km = %.2f inch", km, inch);
 

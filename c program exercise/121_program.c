@@ -9,9 +9,9 @@ int main()
 
     mtr = km*1000;
     cm = mtr*100;
-    feet = cm*30.48;
+    feet = cm / 30.48;
 
-    printf("%.0f km = %.2f feet", km, feet);
+    printf("%.2f km = %.2f feet", km, feet);
 
     return 0;
 }
