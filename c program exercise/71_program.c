@@ -9,7 +9,7 @@ int main()
 
     mille = cen/10;
 
-    printf("%.0f cen = %.2f mille", cen, mille);
+    printf("%.2f cen = %.2f mille", cen, mille);
 
     return 0;
 }
