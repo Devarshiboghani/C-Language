@@ -9,7 +9,7 @@ int main()
 
     inch = feet*12;
 
-    printf("%.0f feet = %.2f inch", feet, inch);
+    printf("%.2f feet = %.2f inch", feet, inch);
     
     return 0;
 }
