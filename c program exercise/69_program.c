@@ -9,7 +9,7 @@ int main()
 
     celsius = kelvin - 273.15;
 
-    printf("%.0f kelvin = %.2f celsius", kelvin, celsius);
+    printf("%.2f kelvin = %.2f celsius", kelvin, celsius);
     
     return 0;
 }
