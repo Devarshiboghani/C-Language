@@ -9,7 +9,7 @@ int main()
 
     ltr = kl*1000;
 
-    printf("%.0f kl = %.2f ltr", kl, ltr);
+    printf("%.2f kl = %.0f ltr", kl, ltr);
     
     return 0;
 }
