@@ -7,10 +7,10 @@ int main()
     printf("Enter number of gm = ");
     scanf("%f", &gm);
 
-    kg = gm*1000;
-    ton = kg*1000;
+    kg = gm/1000;
+    ton = kg/1000;
 
-    printf("%.0f gm = %.2f ton", gm, ton);
+    printf("%.0f gm = %.6f ton", gm, ton);
     
     return 0;
 }
