@@ -2,13 +2,13 @@
 
 int main()
 {
-    int a = 90, b = 95;
-    int x = 0, y = 0;
+    int a, b;
+    int x, y;
 
-    printf("Enter number of value 1= ");
+    printf("Enter a value 1= ");
     scanf("%d", &a);
 
-    printf("Enter number of value 2= ");
+    printf("Enter a value 2= ");
     scanf("%d", &b);
 
     x = 100-a;
@@ -18,13 +18,21 @@ int main()
     {
         printf("a is nearest value");
     }
+
     else if(y < x)
     {
         printf("b is nearest value");
     }
+
+    else if(y == x)
+    {
+        printf("both are equal");
+    }
+
     else
     {
         printf("both are equal");
     }
+
     return 0;
 }
