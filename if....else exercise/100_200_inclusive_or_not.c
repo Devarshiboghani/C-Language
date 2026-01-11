@@ -2,7 +2,7 @@
 
 int main()
 {
-    int val1 = 0, val2 = 0;
+    int val1, val2;
 
     printf("Enter number of value 1 = ");
     scanf("%d", &val1);
@@ -10,7 +10,7 @@ int main()
     printf("Enter number of value 2 = ");
     scanf("%d", &val2);
 
-    if(100 <= val1 && val2 <= 200 )
+    if ((val1 >= 100 && val1 <= 200) || (val2 >= 100 && val2 <= 200))
     {
         printf("range is inclusive");
     }

@@ -2,8 +2,9 @@
 
 int main()
 {
-    int val = 0;
-    printf("Enter number of value = ");
+    int val;
+    
+    printf("Enter a positive number = ");
     scanf("%d", &val);
 
     if(val % 3 == 0 || val % 7 == 0)
