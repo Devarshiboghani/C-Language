@@ -10,7 +10,7 @@ int main()
     kg = ton*1000;
     gm = kg*1000;
 
-    printf("%.0f ton = %.2f gm", ton, gm);
+    printf("%.2f ton = %.2f gm", ton, gm);
     
     return 0;
 }

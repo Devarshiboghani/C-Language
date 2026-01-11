@@ -9,7 +9,7 @@ int main()
 
     cen = dec/10;
 
-    printf("%.0f dec = %.2f cen", dec, cen);
+    printf("%.2f dec = %.2f cen", dec, cen);
     
     return 0;
 }

@@ -9,7 +9,7 @@ int main()
 
     ton = kg/1000;
 
-    printf("%.0f kg = %.2f ton", kg, ton);
+    printf("%.2f kg = %.6f ton", kg, ton);
     
     return 0;
 }

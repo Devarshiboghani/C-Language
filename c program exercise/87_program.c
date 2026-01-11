@@ -12,7 +12,7 @@ int main()
     hr = day*24;
     min = hr*60;
 
-    printf("%.0f mon = %.2f min", mon, min);
+    printf("%.2f mon = %.2f min", mon, min);
     
     return 0;
 }
