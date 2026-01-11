@@ -12,7 +12,7 @@ int main()
     day = hr/24;
     week = day/7;
 
-    printf("%.0f sec = %.2f week", sec, week);
+    printf("%.0f sec = %.6f week", sec, week);
 
     return 0;
 }

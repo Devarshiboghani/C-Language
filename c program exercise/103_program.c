@@ -10,7 +10,7 @@ int main()
     km = mile*1.60934;
     mtr = km*1000;
     cm = mtr*100;
-    feet = cm*30.48;
+    feet = cm/30.48;
 
     printf("%.0f mile = %.2f feet", mile, feet);
 
