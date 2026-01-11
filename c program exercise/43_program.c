@@ -7,7 +7,7 @@ int main()
     printf("Enter number of inch = ");
     scanf("%f", &inch);
 
-    cm = inch/2.54;
+    cm = inch*2.54;
     mtr = cm/100;
 
     printf("%.0f inch = %.2f mtr", inch, mtr);
