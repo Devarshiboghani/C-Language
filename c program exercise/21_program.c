@@ -10,6 +10,5 @@ int main()
     fahrenheit = (kelvin - 273.15) * 9.0/5.0 + 32;
 
     printf("%.0f kelvin = %.2f fahrenheit", kelvin, fahrenheit);
-
     return 0;
 }
