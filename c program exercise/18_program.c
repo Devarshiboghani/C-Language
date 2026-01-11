@@ -7,9 +7,9 @@ int main()
     printf("Enter number of min = ");
     scanf("%f", &min);
 
-    hr = min*60;
-    day = hr*24;
+    hr = min/60;
+    day = hr/24;
 
-    printf("%f min = %f day\n",min, day);
+    printf("%f min = %.2f day\n",min, day);
     return 0;
 }
