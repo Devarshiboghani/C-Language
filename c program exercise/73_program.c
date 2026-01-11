@@ -8,9 +8,9 @@ int main()
     scanf("%f", &mtr);
 
     cm = mtr*100;
-    feet = cm*30.48;
+    feet = cm/30.48;
 
-    printf("%.0f mtr = %.2f feet", mtr, feet);
+    printf("%.2f mtr = %.2f feet", mtr, feet);
     
     return 0;
 }
