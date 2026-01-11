@@ -2,8 +2,9 @@
 
 int main()
 {
-    int a = 0;
-    printf("Enter number of value = ");
+    int a;
+
+    printf("Enter a number = ");
     scanf("%d", &a);
 
     if(a >= 10 && a <= 100 || a >= 10 && a <= 200)
@@ -13,7 +14,7 @@ int main()
 
     else
     {
-        printf("%d",a);
+        printf("false");
     }
 
     return 0;
