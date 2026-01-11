@@ -10,7 +10,7 @@ int main()
     yr = dec*10;
     day = yr*365;
 
-    printf("%.0f dec = %.2f day", dec, day);
+    printf("%.2f dec = %.2f day", dec, day);
     
     return 0;
 }

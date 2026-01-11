@@ -12,7 +12,7 @@ int main()
     day = hr/24;
     yr = day/365;
 
-    printf("%.0f sec = %.2f yr", sec, yr);
+    printf("%.0f sec = %.6f yr", sec, yr);
     
     return 0;
 }

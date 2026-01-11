@@ -2,7 +2,8 @@
 
 int main()
 {
-    float dec = 0, yr = 0, day = 0, hr = 0, min = 0, sec = 0;
+    float dec = 0;
+    double yr = 0, day = 0, hr = 0, min = 0, sec = 0;
 
     printf("Enter number of dec = ");
     scanf("%f", &dec);
@@ -13,7 +14,7 @@ int main()
      min = hr*60;
      sec = min*60;
 
-     printf("%.0f dec = %.2f sec", dec, sec);
+     printf("%.0f dec = %.lf sec", dec, sec);
      
     return 0;
 }
