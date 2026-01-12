@@ -2,21 +2,22 @@
 
 int main()
 {
-    int a = 7, b = 9;
-    printf("Enter number of value 1 = ");
-    scanf("%d", &a);
+    int a, b, sum;
 
-    printf("Enter number of value 2 = ");
-    scanf("%d", &b);
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
 
-    if(10 <= a+b && a+b <= 20)
+    sum = a + b;
+    printf("Sum = %d\n", sum);
+
+    if(sum >= 10 && sum <=20)
     {
-        printf("sum is in the range");
+        printf("Sum is in the range 10 to 20\n");
     }
 
     else
     {
-        printf("sum is not in the range");
+        printf("Sum is NOT in the range 10 to 20\n");
     }
     
     return 0;
