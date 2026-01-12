@@ -2,7 +2,7 @@
 
 int main()
 {
-    int a = 5, b = 10;
+    int a, b;
 
     printf("Enter number of value 1 = ");
     scanf("%d", &a);
@@ -10,7 +10,7 @@ int main()
     printf("Enter number of value 2 = ");
     scanf("%d", &b);
 
-    if(a == 5 || b == 5 || a+b == 5 || a-b == 5)
+    if(a == 5 || b == 5 || a+b == 5 || a-b == 5 || b-a == 5)
     {
         printf("true");
     }

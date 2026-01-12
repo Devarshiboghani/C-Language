@@ -2,14 +2,15 @@
 
 int main()
 {
-    int a = 7, b = 9, c = 6;
-    printf("Enter number of value 1 = ");
+    int a, b, c;
+
+    printf("Enter a value 1 = ");
     scanf("%d", &a);
 
-    printf("Enter number of value 2 = ");
+    printf("Enter a value 2 = ");
     scanf("%d", &b);
 
-    printf("Enter number of value 3 = ");
+    printf("Enter a value 3 = ");
     scanf("%d", &c);
 
     if(a == b)

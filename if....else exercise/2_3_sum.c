@@ -3,14 +3,14 @@
 int main()
 {
     int val;
-    int a = 0, b = 0, c = 0;
+    int a, b, c;
 
     printf("How many values use for addition = ");
     scanf("%d", &val);
 
     if(val == 2)
     {
-        printf("Add two values = ");
+        printf("Enter two values = ");
         scanf("%d %d" , &a, &b);
 
         printf("Sum of %d and %d is %d\n", a, b, a + b);
@@ -18,7 +18,7 @@ int main()
 
     else if(val == 3)
     {
-        printf("Add three values = ");
+        printf("Enter three values = ");
         scanf("%d %d %d", &a, &b, &c);
 
         printf("Sum of %d, %d and %d is %d\n", a, b, c, a + b + c);
@@ -28,5 +28,6 @@ int main()
     {
         printf("invalid val\n");
     }
+    
     return 0;
 }

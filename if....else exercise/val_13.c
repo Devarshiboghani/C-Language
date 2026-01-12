@@ -2,35 +2,22 @@
 
 int main()
 {
-    int a =6, b = 9, c = 3;
+    int a, b, c, sum = 0;
 
-    printf("Enter number of value 1 = ");
-    scanf("%d", &a);
-   
-    printf("Enter number of value 2 = ");
-    scanf("%d", &b);
+    printf("Enter three integers: ");
+    scanf("%d %d %d", &a, &b, &c);
 
-    printf("Enter number of value 3 = ");
-    scanf("%d", &c);
+    if (a != 13)
+        sum = sum + a;
 
-    if(a == 13)
-    {
-        printf("sum = %d",b+c);
-    }
+    if (b != 13)
+        sum = sum + b;
 
-    else if(b == 13)
-    {
-        printf("sum = %d",a+c);
-    }
-    else if(c == 13)
-    {
-        printf("sum = %d",a+b);
-    }
+    if (c != 13)
+        sum = sum + c;
 
-    else
-    {
-        printf("sum = %d",a+b+c);
-    }
-    
+    printf("Sum = %d", sum);
+
     return 0;
+
 }

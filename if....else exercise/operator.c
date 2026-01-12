@@ -2,13 +2,13 @@
 
 int main()
 {
-    int a = 0, b = 0;
+    int a, b;
     char op ;
 
-    printf("Enter value 1 = ");
+    printf("Enter first number = ");
     scanf("%d",&a);
 
-    printf("Enter value 2 = ");
+    printf("Enter second number = ");
     scanf("%d", &b);
 
     printf("Enter operator = ");
@@ -41,5 +41,6 @@ int main()
     {
         printf("invalid operator");
     }
+
     return 0;
 }
