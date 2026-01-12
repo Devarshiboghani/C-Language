@@ -2,55 +2,56 @@
 
 int main()
 {
-    int eng=80,math=88, sci=78, his = 67,com=90;
+    int eng, math, sci, hist, comp;
+    int total;
+    float percentage;
 
-    printf("Enter english mark = ");
+    printf("Enter marks of English: ");
     scanf("%d", &eng);
 
-    printf("Enter math mark = ");
+    printf("Enter marks of Math: ");
     scanf("%d", &math);
 
-    printf("Enter science mark = ");
+    printf("Enter marks of Science: ");
     scanf("%d", &sci);
 
-    printf("Enter history mark = ");
-    scanf("%d", &his);
+    printf("Enter marks of History: ");
+    scanf("%d", &hist);
 
-    printf("Enter computer mark = ");
-    scanf("%d", &com);
+    printf("Enter marks of Computer: ");
+    scanf("%d", &comp);
 
-    int sum = eng + math+sci+his+com;
-    float pr = sum*100/500;
+    total = eng + math + sci + hist + comp;
+    percentage = (total / 500.0) * 100;
 
-    if(pr >= 90)
-    {
-        printf("grade a+");
-    }
+    printf("\nTotal Marks = %d", total);
+    printf("\nPercentage = %.2f%%\n", percentage);
 
-    else if(pr >= 80)
+    if (percentage >= 90)
     {
-        printf("grade a");
-    }
-    else if(pr >= 70)
-    {
-        printf("grade b");
-    }
-    else if(pr >= 60)
-    {
-        printf("grade c");
-    }
-    else if(pr >= 40)
-    {
-        printf("grade d");
-    }
-    else if (pr < 40)
-    {
-        printf("fail");
+        printf("Grade: A+");
     }
 
+    else if (percentage >= 80)
+    {
+        printf("Grade: A");
+    }
+    else if (percentage >= 70)
+    {
+        printf("Grade: B");
+    }
+    else if (percentage >= 60)
+    {
+        printf("Grade: C");
+    }
+    else if (percentage >= 40)
+    {
+        printf("Grade: D");
+    }
+    
     else
     {
-        printf("invalid");
+        printf("Grade: Fail");
     }
 
     return 0;
