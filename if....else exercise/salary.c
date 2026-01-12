@@ -25,7 +25,7 @@ int main()
         da =  basic * 0.95;
     }
 
-     gross = basic + hra + da;
+    gross = basic + hra + da;
      
     printf("gross salary = %.2f", gross);
 
