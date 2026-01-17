@@ -16,16 +16,10 @@ int main()
     printf("Enter a value(1 to %d) : ", n);
     scanf("%d",&val);
 
-    if(val < 1 || val > n)
-    {
-        printf("invalid value %d", n);
+       for(i = val - 1; i < n - 1; i++) {
+        arr[i] = arr[i + 1];
     }
-    else
-    {
-    for(i = val - 1; i < n-1; i++)
-    {
-        arr[i] = arr[i+1];
-    }
+
     n--;
 
     printf("Array after declaration :\n");
@@ -33,7 +27,5 @@ int main()
     {
         printf("%d", arr[i]);
     }
-    printf("\n");
-}
     return 0;
 }

@@ -2,31 +2,30 @@
 
 int main()
 {
-    int n, i, arr[5], ele, val;
+    int n, i, arr[100], ele, val;
 
     printf("Enter the number of elements in the array : ");
     scanf("%d", &n);
 
-    printf("Enter %d elements : ", n);
+    printf("Enter %d elements : \n", n);
     for(i = 0; i < n; i++)
     {
         scanf("%d",&arr[i]);
     }
 
-    printf("Enter the value insert(1 to %d) : ", n+1);
+    printf("Enter the value insert(1 to ) : ");
     scanf("%d", &val);
     printf("Enter the elements to insert : ");
     scanf("%d", &ele);
 
-    for(i = n; i >= val; i--)
-    {
-        arr[i] = arr[i-1];
+    for(i = n - 1; i >= ele - 1; i--) {
+        arr[i + 1] = arr[i];
     }
 
-    arr[val-1] = ele;
+    arr[ele - 1] = val;
     n++;
 
-    printf("Array after insert : ");
+    printf("Array after insert : \n");
     for(i = 0; i < n; i++)
     {
         printf("%d", arr[i]);
