@@ -2,48 +2,45 @@
 
 int main()
 {
-    int size1, size2;
+    int a[50], b[50], c[100];
+    int n1, n2, i, j;
 
-    printf("Enter the size of the first array : ");
-    scanf("%d", &size1);
+    printf("Enter number of elements in first array: ");
+    scanf("%d", &n1);
 
-    int arr1[size1];
-
-    printf("Enter %d elements for the first array : \n", size1);
-    for( int i = 0; i < size1; i++)
+    printf("Enter elements of first array:\n");
+    for(i = 0; i < n1; i++)
     {
-        scanf("%d", &arr1[i]);
+        scanf("%d", &a[i]);
     }
 
-    printf("Enter the size of the second array : ");
-    scanf("%d", &size2);
+    printf("Enter number of elements in second array: ");
+    scanf("%d", &n2);
 
-    int arr2[size2];
-
-    printf("Enter %d elements for the second array : \n", size2);
-    for(int i = 0; i < size2; i++)
+    printf("Enter elements of second array:\n");
+    for(i = 0; i < n2; i++)
     {
-        scanf("%d", &arr2[i]);
+        scanf("%d", &b[i]);
     }
 
-    int size3 = size1 + size2;
-    int arr3[size3];
-
-    for(int i = 0; i < size1; i++)
+    // Copy first array into third array
+    for(i = 0; i < n1; i++)
     {
-        arr3[i] = arr1[i];
+        c[i] = a[i];
     }
 
-    for(int i = 0; i < size2; i++)
+    // Copy second array into third array
+    for(j = 0; j < n2; j++)
     {
-        arr3[size1 + i] = arr2[i];
+        c[i] = b[j];
+        i++;
     }
 
-    printf("Merged array : ");
-    for(int i = 0; i < size3; i++)
+    printf("Merged array elements are:\n");
+    for(i = 0; i < n1 + n2; i++)
     {
-        printf("%d", arr3[i]);
+        printf("%d ", c[i]);
     }
-    
+
     return 0;
 }

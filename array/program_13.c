@@ -2,46 +2,40 @@
 
 int main()
 {
-    int i, j, n, cnt = 0;
+    int arr[100], n, i, j, count, dupCount = 0;
 
-    printf("Enter a number of elements : ");
+    printf("Enter number of elements: ");
     scanf("%d", &n);
 
-    int arr[n], freq[n];
-
-    printf("Enter %d elements :\n", n);
+    printf("Enter array elements:\n");
     for(i = 0; i < n; i++)
     {
         scanf("%d", &arr[i]);
-        freq[i] = -1;
     }
 
     for(i = 0; i < n; i++)
     {
-        int dup = 1;
-        for(j = i+1; j < n; j++)
+        count = 1;
+
+        if(arr[i] == -1)
+            continue;
+
+        for(j = i + 1; j < n; j++)
         {
             if(arr[i] == arr[j])
             {
-                dup++;
-                freq[j] = 0;
+                count++;
+                arr[j] = -1;   // mark as counted
             }
         }
-        if(freq[i] != 0)
+
+        if(count > 1)
         {
-            freq[i] = dup;
+            dupCount++;
         }
     }
 
-    for(i = 0; i < n; i++)
-    {
-        if(freq[i] > 1)
-        {
-            cnt++;
-        }
-    }
-
-    printf("Total number of elements : %d", cnt);
+    printf("Total number of duplicate elements = %d", dupCount);
 
     return 0;
 }
