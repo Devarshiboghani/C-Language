@@ -7,7 +7,7 @@ int main()
     printf("Enter number of elements: ");
     scanf("%d", &n);
 
-    printf("Enter array elements:\n");
+    printf("Enter array elements:\n");   // 1 3 7 2 8
     for(i = 0; i < n; i++)
     {
         scanf("%d", &arr[i]);
@@ -25,7 +25,7 @@ int main()
     // Put first element at last position
     arr[n - 1] = temp;
 
-    printf("Array after left rotation:\n");
+    printf("Array after left rotation:\n");   // 3 7 2 8 1
     for(i = 0; i < n; i++)
     {
         printf("%d ", arr[i]);
