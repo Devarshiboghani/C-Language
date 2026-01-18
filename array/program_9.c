@@ -13,9 +13,9 @@ int main()
         scanf("%d",&arr[i]);
     }
 
-    printf("Enter the value insert(1 to ) : ");
+    printf("Enter the value insert(1 to ) : ");  // ama jr value ley e 3rd number pr vachhe store thay
     scanf("%d", &val);
-    printf("Enter the elements to insert : ");
+    printf("Enter the elements to insert : ");  // 3 number pr change thay
     scanf("%d", &ele);
 
     for(i = n - 1; i >= ele - 1; i--) {
