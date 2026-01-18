@@ -2,14 +2,13 @@
 
 int main()
 {
-    int n, i, j = 0, k = 0;
+    int arr[100], even[100], odd[100];
+    int n, i, e = 0, o = 0;
 
-    printf("Enter the number of elements in the array : ");
+    printf("Enter number of elements: ");
     scanf("%d", &n);
 
-    int arr[n], even[n], odd[n];
-
-    printf("Enter %d elementes : \n", n);
+    printf("Enter array elements:\n");
     for(i = 0; i < n; i++)
     {
         scanf("%d", &arr[i]);
@@ -19,27 +18,27 @@ int main()
     {
         if(arr[i] % 2 == 0)
         {
-            even[j++] = arr[i];
+            even[e] = arr[i];
+            e++;
         }
         else
         {
-            odd[k++] = arr[i];
+            odd[o] = arr[i];
+            o++;
         }
     }
 
-    printf("Even elements : ");
-    for(i = 0; i < j; i++)
+    printf("Even elements array:\n");
+    for(i = 0; i < e; i++)
     {
-        printf("%d", even[i]);
+        printf("%d ", even[i]);
     }
-    printf("\n");
 
-    printf("Odd elements : ");
-    for(i = 0; i < k; i++)
+    printf("\nOdd elements array:\n");
+    for(i = 0; i < o; i++)
     {
-        printf("%d", odd[i]);
+        printf("%d ", odd[i]);
     }
-    printf("\n");
 
     return 0;
 }

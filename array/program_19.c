@@ -2,35 +2,46 @@
 
 int main()
 {
-    int n, i, j, val;
-    int arr[n];
+    int arr[100], n, i, j, temp, choice;
 
-    printf("Enter size of array : ");
+    printf("Enter number of elements: ");
     scanf("%d", &n);
 
-    printf("Enter elements in array : ");
+    printf("Enter array elements:\n");
     for(i = 0; i < n; i++)
     {
         scanf("%d", &arr[i]);
     }
-   
-    for(i = 0; i < n; i++)
+
+    printf("1. Ascending Order\n");    //chadto krum
+    printf("2. Descending Order\n");   //utarato krum
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
+
+    for(i = 0; i < n - 1; i++)
     {
-        for(j = i+1; j < n; j++)
+        for(j = i + 1; j < n; j++)
         {
-            if(arr[i] > arr[j])
+            if((choice == 1 && arr[i] > arr[j]) ||
+               (choice == 2 && arr[i] < arr[j]))
             {
-                val = arr[i];
+                temp = arr[i];
                 arr[i] = arr[j];
-                arr[j] = val;
+                arr[j] = temp;
             }
         }
     }
 
-    printf("Elements of array in ascending order : ");
+    if(choice == 1)
+        printf("Array in Ascending Order:\n");
+    else if(choice == 2)
+        printf("Array in Descending Order:\n");
+    else
+        printf("Invalid choice\n");
+
     for(i = 0; i < n; i++)
     {
-        printf("%d\t", arr[i]);
+        printf("%d ", arr[i]);
     }
 
     return 0;

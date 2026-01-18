@@ -2,36 +2,34 @@
 
 int main()
 {
-    int i, n, key, found = 0;
+    int arr[100], n, i, search, found = 0;
 
-    printf("Enter the number of elements in  the array : ");
+    printf("Enter number of elements: ");
     scanf("%d", &n);
 
-    int arr[n];
-
-    printf("Enter %d elements : \n",n);
+    printf("Enter array elements:\n");
     for(i = 0; i < n; i++)
     {
         scanf("%d", &arr[i]);
     }
 
-    printf("Enter the elements to serch : ");
-    scanf("%d", &key);
+    printf("Enter element to search: ");
+    scanf("%d", &search);
 
     for(i = 0; i < n; i++)
     {
-        if(arr[i] == key)
+        if(arr[i] == search)
         {
-            printf("Elements %d found at position %d.\n", key, i+1);
+            printf("Element %d found at position %d\n", search, i + 1);
             found = 1;
             break;
         }
     }
 
-    if(!found)
+    if(found == 0)
     {
-        printf("Elements %d not found in the array.\n", key);
+        printf("Element not found in the array");
     }
-    
+
     return 0;
 }
