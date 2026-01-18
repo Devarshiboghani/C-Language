@@ -1,43 +1,37 @@
 #include <stdio.h>
 
-void findUnique(int arr[], int n)
-{
-    printf("Enter elements : \n");
-    for(int i = 0; i < n; i++)
-    {
-      int  isUnique = 1;
-
-        for(int j = 0; j < n; j++)
-        {
-           if(i != j && arr[i] == arr[j])
-           {
-                isUnique = 0;
-            }
-        }
-             if(isUnique)
-             {
-                  printf("%d",arr[i]);
-             }
-        }
-        printf("\n");
-}
-
 int main()
 {
-    int n;
+    int arr[100], n, i, j, count;
 
-    printf("Enter a number of elements : ");
+    printf("Enter number of elements: ");
     scanf("%d", &n);
 
-    int arr[n];
-
-    printf("Enter %d elements:\n", n);
-    for (int i = 0; i < n; i++)
+    printf("Enter array elements:\n");
+    for(i = 0; i < n; i++)
     {
         scanf("%d", &arr[i]);
     }
 
-    findUnique(arr, n);
+    printf("Unique elements in the array are:\n");
+
+    for(i = 0; i < n; i++)
+    {
+        count = 0;
+
+        for(j = 0; j < n; j++)
+        {
+            if(arr[i] == arr[j])
+            {
+                count++;
+            }
+        }
+
+        if(count == 1)
+        {
+            printf("%d ", arr[i]);
+        }
+    }
 
     return 0;
 }

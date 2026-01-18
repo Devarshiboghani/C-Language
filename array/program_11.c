@@ -2,43 +2,36 @@
 
 int main()
 {
-    int i ,j, n, cnt ;
-    int freq[n], arr[n];
+    int arr[100], n, i, j, count;
+    int visited[100] = {0};
 
-    printf("Enter a number of elements : ");
+    printf("Enter number of elements: ");
     scanf("%d", &n);
 
-    printf("Enter  %d elements : \n", n);
+    printf("Enter array elements:\n");
     for(i = 0; i < n; i++)
     {
         scanf("%d", &arr[i]);
-       freq[i] = -1;
     }
 
     for(i = 0; i < n; i++)
     {
-        cnt = 1;
-        for(j = i+1; j < n; j++)
+        if(visited[i] == 1)
+            continue;
+
+        count = 1;
+
+        for(j = i + 1; j < n; j++)
         {
             if(arr[i] == arr[j])
             {
-                cnt++;
-                freq[j] = 0;
+                count++;
+                visited[j] = 1;
             }
         }
-        if(freq[i] != 0)
-        {
-            freq[i] = cnt;
-        }
+
+        printf("Frequency of %d = %d\n", arr[i], count);
     }
 
-    printf("element | freq\n");
-    for(i = 0; i < n; i++)
-    {
-        if(freq[i] != 0)
-        {
-            printf("%d | %d\n", arr[i], freq[i]);
-        }
-    }
     return 0;
 }

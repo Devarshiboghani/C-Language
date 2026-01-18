@@ -13,7 +13,7 @@ int main()
         scanf("%d", &arr[i]);
     }
 
-    printf("Enter a value(1 to %d) : ", n);    // je number ni value kadhvi hoy e
+    printf("Enter a value(1 to %d) : ", n);    //je number ni value kadhvi hoy e
     scanf("%d",&val);
 
        for(i = val - 1; i < n - 1; i++) {
@@ -22,7 +22,7 @@ int main()
 
     n--;
 
-    printf("Array after declaration :\n");   // e number nikli jay
+    printf("Array after declaration :\n");   //e number nikli jay
     for(i = 0; i < n; i++)
     {
         printf("%d", arr[i]);
