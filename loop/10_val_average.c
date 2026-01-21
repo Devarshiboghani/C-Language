@@ -1,21 +1,22 @@
+//  Write a program to accept 10 values and print its average.
+
 #include <stdio.h>
 
 int main()
 {
-    int i = 1, val = 0, sum = 0;
-    float average;
+    int i = 1;
+    float sum = 0, val, average;
 
-    while(i <= 10)
+    for(i = 1; i <= 10; i++)
     {
         printf("Enter value no %d = ",i);
-        scanf("%d", &val);
+        scanf("%f", &val);
 
         sum = sum + val;
-        i++;
 
         average = sum/10;
     }
-    printf("Average is %d\n", average);
+    printf("Average is %.2f\n", average);
 
     return 0;
 }

@@ -1,3 +1,5 @@
+// Accept 10 values and print even numbers.
+
 #include <stdio.h>
 
 int main()

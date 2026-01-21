@@ -1,3 +1,5 @@
+// Accept 10 values and print odd numbers.
+
 #include <stdio.h>
 
 int main()
@@ -13,7 +15,7 @@ int main()
 
         if(val % 2 != 0)
         {
-            printf("it is odd number\n");
+            printf("%d is odd number\n", val);
         }
     }
 

@@ -1,3 +1,5 @@
+// Write a program to accept 10 values and print its sum.
+
 #include <stdio.h>
 
 int main()

@@ -1,3 +1,5 @@
+// Accept 10 values and count negative numbers.
+
 #include <stdio.h>
 
 int main()

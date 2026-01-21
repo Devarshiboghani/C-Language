@@ -1,3 +1,5 @@
+// Accept 10 values and print negative numbers.
+
 #include <stdio.h>
 
 int main()
@@ -13,7 +15,7 @@ int main()
 
         if(val < 0)
         {
-            printf("It is negative number\n");
+            printf("%d is negative number\n", val);
         }
     }
     return 0;

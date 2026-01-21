@@ -1,3 +1,5 @@
+// Accept 10 values and print positive numbers.
+
 #include <stdio.h>
 
 int main()

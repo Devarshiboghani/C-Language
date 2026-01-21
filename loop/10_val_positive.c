@@ -1,3 +1,5 @@
+// Accept 10 values and print positive numbers.
+
 #include <stdio.h>
 
 int main()
@@ -13,7 +15,7 @@ int main()
 
         if(val > 0)
         {
-              printf("it is positive number\n");
+              printf("%d is positive number\n", val);
         }
     }
      
