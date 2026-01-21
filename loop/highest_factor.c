@@ -1,21 +1,19 @@
+// Accept a value and find highest factor.
+
 #include <stdio.h>
 
 int main()
 {
-    int val ,hf, fact = 1;
+    int val, i, hf = 1;
 
     printf("Enter value = ");
-    scanf("%d", &fact);
+    scanf("%d", &val);
     
-    hf = fact;
-
-    printf("All factors of %d are = \n", fact);
- 
-    for(val = 1; val >= 1; val++)    
+    for(i = 1; i <= val / 2; i++)
     {
-        if(fact % val == 0)
+        if(val % i == 0)
         {
-            printf("%d\n", val);
+            hf = i;
         }
     }
 
