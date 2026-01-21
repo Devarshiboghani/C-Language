@@ -1,15 +1,14 @@
+// Write a program to print series as below : 1 8 27 64 125 216 243 512 729 1000
+
 #include <stdio.h>
 
 int main()
 {
     int i = 1, qu = 1;
 
-    printf("Enter value = ");
-    scanf("%d", &qu);
-
     while(i <= 10)
     {
-        printf("series = %d\n", qu);
+        printf("%d ", qu);
 
         i++;
 

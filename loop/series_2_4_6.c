@@ -1,16 +1,15 @@
+// Write a program to print series as below : 2 4 6 8 10 12 14 16 18 20
+
 #include <stdio.h>
 
 int main()
 {
     int i = 1, even = 2;
 
-    printf("Enter value = ");
-    scanf("%d", &even);
-
     while(i <= 10)
     {
 
-        printf("series = %d\n", even);
+        printf("%d ", even);
 
         i++;
 

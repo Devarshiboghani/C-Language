@@ -1,16 +1,15 @@
+// Write a program to print series as below : 1 4 9 16 25 36 49 64 81 100
+
 #include <stdio.h>
 
 int main()
 {
     int i = 1, sq = 1;
 
-    printf("Enter value = ");
-    scanf("%d", &sq);
-
     while(i <= 10)
     {
 
-        printf("series = %d\n", sq);
+        printf("%d ", sq);
 
         i++;
 
