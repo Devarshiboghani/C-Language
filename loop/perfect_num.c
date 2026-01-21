@@ -1,13 +1,15 @@
+// Accept a value and find whether it is perfect no or not.
+
 #include <stdio.h>
 
 int main()
 {
-    int i, val , sum = 0;
+    int i, val, sum = 0;
 
     printf("Enter value = ");
     scanf("%d", &val);
 
-    for(i = 1; val / 2 >= i; i++)
+    for(i = 1; i <= val / 2; i++)
     {
         if(val % i == 0)
         {
