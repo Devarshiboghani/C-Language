@@ -1,33 +1,26 @@
+// Accept 10 values and count total odd and even numbers.
+
 #include <stdio.h>
 
 int main()
 {
-    int i = 1, val = 0, ecnt = 1, ocnt = 1;
+    int i, num;
+    int even = 0, odd = 0;
 
-    while(i <= 10)
+    printf("Enter 10 values:\n");
+
+    for(i = 1; i <= 10; i++)
     {
-        printf("Enter value no %d = ", i);
-        scanf("%d", &val);
+        scanf("%d", &num);
 
-        i++;
-
-        if(val % 2 == 0)
-        {
-            printf("count = %d\n", ecnt);
-            ecnt++;
-
-            printf("It is even number = %d\n");
-        }
-        
-        if(val % 2 != 0)
-        {
-            printf("count = %d\n", ocnt);
-            ocnt++;
-
-            printf("It is odd number = %d\n");
-        }
-
+        if(num % 2 == 0)
+            even++;
+        else
+            odd++;
     }
+
+    printf("Total Even numbers = %d\n", even);
+    printf("Total Odd numbers = %d", odd);
 
     return 0;
 }
