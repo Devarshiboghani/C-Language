@@ -1,22 +1,26 @@
+// Accept a value and count total digits.
+
 #include <stdio.h>
 
 int main()
 {
-    int val, cnt = 1;
+    int n, count = 0;
 
-    printf("value = ");
-    scanf("%d", &val);
+    printf("Enter a number: ");
+    scanf("%d", &n);
 
-    while(val > 0)
+    if(n == 0)
+        count = 1;
+    else
     {
-
-          printf("Total digit of the value %d is = %d\n", val, cnt);
-
-          cnt++;
-
-          val = val/10;
-
+        while(n != 0)
+        {
+            n = n / 10;
+            count++;
+        }
     }
+
+    printf("Total digits = %d", count);
 
     return 0;
 }

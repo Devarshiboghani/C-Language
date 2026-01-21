@@ -1,40 +1,28 @@
+// Accept 10 values and count total positive, negative and zero values.
+
 #include <stdio.h>
 
 int main()
 {
-    int i = 1, pcnt = 1, ncnt = 1, zcnt = 1, val = 0;
+    int i, num;
+    int pos = 0, neg = 0, zero = 0;
 
-    while(i <= 10)
+    for(i = 1; i <= 10; i++)
     {
-        printf("Enter value no %d = ", i);
-        scanf("%d", &val);
+        printf("Enter value %d: ", i);
+        scanf("%d", &num);
 
-        i++;
-
-        if(val > 0)
-        {
-            printf("count = %d\n",pcnt);
-            pcnt++;
-
-            printf("It is positive values = %d\n");
-        }
-
-        if(val < 0)
-        {
-            printf("count = %d\n", ncnt);
-            ncnt++;
-
-            printf("It is negative values = %d\n");
-        }
-
-        if(val == 0)
-        {
-            printf("count = %d\n", zcnt);
-            zcnt++;
-
-            printf("It is zero = %d\n");
-        }
+        if(num > 0)
+            pos++;
+        else if(num < 0)
+            neg++;
+        else
+            zero++;
     }
+
+    printf("\nPositive numbers = %d", pos);
+    printf("\nNegative numbers = %d", neg);
+    printf("\nZero values = %d", zero);
 
     return 0;
 }
