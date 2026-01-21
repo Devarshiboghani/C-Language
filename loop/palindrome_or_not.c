@@ -1,3 +1,5 @@
+// Accept a value and find whether it is palindrome no or not.
+
 #include <stdio.h>
 
 int main()
@@ -16,9 +18,9 @@ int main()
         val = val / 10;
 
     }
-        if(s == r)
+        if(r == s)
         {
-            printf("%d is a palindrome\n",s );
+            printf("%d is a palindrome\n", s);
         }
 
         else      
