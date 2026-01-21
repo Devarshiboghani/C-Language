@@ -1,3 +1,5 @@
+// Accept a value and find all factors.
+
 #include <stdio.h>
 
 int main()

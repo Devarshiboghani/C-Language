@@ -1,8 +1,10 @@
+// Accept a value and find whether it is armstrong no or not
+
 #include <stdio.h>
 
 int main()     
 {
-    int val, d , a = 0, s;
+    int val, d, s, a = 0;
 
     printf("Enter value = ");
     scanf("%d", &val);
