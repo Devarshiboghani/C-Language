@@ -1,8 +1,10 @@
+// Accept a value and reverse it.
+
 #include <stdio.h>
 
 int main()
 {
-    int val, d= 0, r = 0;
+    int val, d = 0, r = 0;
 
     printf("Enter value = ");
     scanf("%d", &val);
