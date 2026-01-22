@@ -1,30 +1,26 @@
+// Accept 10 values and print sum of positive and negative values.
+
 #include <stdio.h>
 
 int main()
 {
-    int i = 1, val = 0, sum = 0;
+    int i, num;
+    int pos_sum = 0, neg_sum = 0;
 
-    while(i <= 10)
+    printf("Enter 10 values:\n");
+
+    for(i = 1; i <= 10; i++)
     {
-        printf("Enter value no %d = ",i);
-        scanf("%d", &val);
+        scanf("%d", &num);
 
-        sum = sum + val;
-
-        i++;
-
-        if(val > 0)
-        {
-            printf("positive value\n");
-        }
-
-        if(val < 0)
-        {
-            printf("negative value\n");
-        }
+        if(num > 0)
+            pos_sum = pos_sum + num;
+        else if(num < 0)
+            neg_sum = neg_sum + num;
     }
 
-    printf("Sum of positive and negative values are = %d", sum);
-    
+    printf("Sum of Positive numbers = %d\n", pos_sum);
+    printf("Sum of Negative numbers = %d", neg_sum);
+
     return 0;
 }

@@ -1,3 +1,5 @@
+// Accept a value and print sum of all digits.
+
 #include <stdio.h>
 
 int main()
@@ -7,13 +9,13 @@ int main()
     printf("Enter value = ");
     scanf("%d", &val);
 
-    while(val > 0)
+    while(val != 0)
     {
         last = val % 10;
 
         sum = sum + last;
 
-        val = val/10;
+        val = val / 10;
     }
 
         printf("sum = %d\n", sum);

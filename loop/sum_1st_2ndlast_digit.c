@@ -1,3 +1,5 @@
+// Accept a value and print sum of first and second last digit.
+
 #include <stdio.h>
 
 int main()
@@ -8,15 +10,13 @@ int main()
     scanf("%d", &val);
 
     val = val / 10;
-    
     sld = val % 10;
 
-    while(val > 0)
+    while(val >= 10)
     {
-        fd = val % 10;
-
         val = val / 10;
     }
+    fd = val;
 
     printf("sum of first and second last digit = %d", fd + sld);
 
