@@ -1,23 +1,22 @@
+// Accept a value and find sum of all factors.
+
 #include <stdio.h>
 
 int main()
 {
-    int val = 1 , fact = 1, sum = 0 ;
+    int val, i, sum = 0 ;
 
     printf("Enter value = ");
-    scanf("%d", &fact);
+    scanf("%d", &val);
 
-    printf("All factors of %d are =  \n", fact);
-
-    for(val = 1; val <= fact; val++)
+    for(i = 1; i <= val; i++)
     {
-        if(fact % val == 0)
+        if(val % i == 0)
         {
-            printf("%d\n", val);
-            sum += val;
+            sum = sum + i;
         }
     }
-         printf("Sum of all factors of %d  is = %d\n",fact ,sum);
+         printf("Sum of all factors = %d", sum);
 
     return 0;
 }
